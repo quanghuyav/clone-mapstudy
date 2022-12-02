@@ -1,0 +1,161 @@
+// css lại thuộc tính của ảnh trong gallery
+
+.wrapper {
+    margin: 3rem 0;
+}
+.gallery {
+    padding-right: 1rem;
+}
+.info {
+    border: 1px solid red;
+    height: fit-content;
+    border: 1px solid #ff8100;
+    border-radius: 4px;
+    background: #fff;
+    padding-bottom: 34px;
+
+    .info-header {
+        background: linear-gradient(270deg, #ff8100, #f05225);
+        color: #fff;
+        padding: 13px 12px;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .info-item {
+        padding: 15px 10px;
+        border-bottom: 1px solid #f8f9fa;
+
+        .info-item-avatar {
+            width: fit-content;
+            height: fit-content;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 123, 255, 0.4);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .info-item-content {
+            padding-left: 10px;
+
+            .title {
+                color: #495057;
+                font-weight: 500;
+                font-size: 14px;
+            }
+            .contact {
+                color: #007bff;
+                text-decoration: none;
+                background-color: transparent;
+                font-size: 14px;
+                display: block;
+            }
+        }
+    }
+
+    .hotline {
+        margin: 25px auto 0;
+        display: flex;
+        align-items: center;
+        width: 260px;
+        z-index: 999999999;
+        color: #f05325;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 25px;
+        padding: 5px;
+    }
+}
+.group-title {
+    font-size: 20px;
+    margin: 40px 0 20px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    &::after {
+        content: '';
+        border-top: 2px solid #0763c6;
+        width: 60px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.courses {
+    justify-content: flex-start !important;
+    margin: -20px;
+    .course-item {
+        width: 25%;
+        padding: 20px;
+        a {
+            box-shadow: 0 4px 8px rgb(98 172 237 / 25%);
+            border-radius: 0.25rem;
+        }
+
+        .course-image {
+            width: 100%;
+            border-top-left-radius: calc(0.25rem - 1px);
+            border-top-right-radius: calc(0.25rem - 1px);
+        }
+        .course-name {
+            color: #292b2c;
+            font-weight: 500;
+            padding: 10px 15px;
+        }
+    }
+}
+.list-videos {
+    overflow-y: auto;
+    height: 500px;
+    .video {
+        height: 100px;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        background-color: #60a1d5;
+        flex-wrap: nowrap;
+
+        &:hover {
+            background-color: #49708d;
+            cursor: pointer;
+        }
+
+        .avatar {
+            flex: 3;
+            padding-right: 10px;
+            img {
+                width: 65px;
+            }
+        }
+
+        .content {
+            flex: 8;
+            width: 180px;
+            .name {
+                max-width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #fff;
+                font-size: 13px;
+                font-weight: 700;
+            }
+            .course {
+                margin-top: 5px;
+                color: #fff;
+                font-size: 13px;
+                font-weight: 700;
+                a {
+                    color: #66ec83;
+                }
+            }
+        }
+    }
+}

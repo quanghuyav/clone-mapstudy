@@ -1,0 +1,68 @@
+.wrapper-mg {
+    max-width: 111rem;
+    margin: 0 auto;
+}
+.header {
+    margin: 8px 0;
+    line-height: 0;
+    img {
+        display: block;
+    }
+}
+.menu {
+    background-color: #0c78da;
+    padding: 0 12rem;
+    .menu-item {
+        display: inline-block;
+        padding: 12px 8px;
+        color: white;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        + .menu-item {
+            margin-left: 5px;
+        }
+
+        .icon {
+            font-size: 1.2rem;
+            padding-right: 0.5rem;
+            vertical-align: unset;
+        }
+
+        &:hover {
+            background-color: #20bcf0;
+        }
+    }
+}
+.footer {
+    svg {
+        height: 1.5rem;
+    }
+    .footer-content {
+        background-color: #0c78da;
+        padding: 30px 120px 0 120px;
+        color: white;
+
+        .title {
+            color: #fff;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .icon {
+            padding: 5rem 0;
+        }
+
+        svg + svg {
+            //fontAwsomeIcon tao ra the svg
+            margin-left: 10px;
+        }
+    }
+}
