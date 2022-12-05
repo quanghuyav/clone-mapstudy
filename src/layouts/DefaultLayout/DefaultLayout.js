@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import Popup from 'reactjs-popup';
 
 import styles from './DefaultLayout.module.scss';
 import logo from '../../assets/img/mainlogo.png';
@@ -47,10 +48,19 @@ function DefaultLayout({ children }) {
                         <FontAwesomeIcon icon={faHouse} className={cx('icon')} />
                         Tài liệu
                     </Link>
-                    <Link to={'/login'} className={cx('menu-item')}>
-                        <FontAwesomeIcon icon={faHouse} className={cx('icon')} />
-                        Đăng nhập
-                    </Link>
+                    <Popup
+                        trigger={
+                            <div className={cx('menu-item')}>
+                                {' '}
+                                <FontAwesomeIcon icon={faHouse} className={cx('icon')} />
+                                Đăng nhập
+                            </div>
+                        }
+                        offsetX={0}
+                        offsetY={0}
+                    >
+                        <div className="modal">helo các abạn</div>
+                    </Popup>
                     <Link to={'/signin'} className={cx('menu-item')}>
                         <FontAwesomeIcon icon={faHouse} className={cx('icon')} />
                         Đăng ký
