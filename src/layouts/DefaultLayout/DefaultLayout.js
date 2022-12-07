@@ -7,6 +7,7 @@ import Popup from 'reactjs-popup';
 import styles from './DefaultLayout.module.scss';
 import logo from '../../assets/img/mainlogo.png';
 import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FormLogin } from './FormLogin';
 
 const cx = classNames.bind(styles);
 
@@ -56,10 +57,9 @@ function DefaultLayout({ children }) {
                                 Đăng nhập
                             </div>
                         }
-                        offsetX={0}
-                        offsetY={0}
+                        modal
                     >
-                        <div className="modal">helo các abạn</div>
+                        <FormLogin />
                     </Popup>
                     <Link to={'/signin'} className={cx('menu-item')}>
                         <FontAwesomeIcon icon={faHouse} className={cx('icon')} />
