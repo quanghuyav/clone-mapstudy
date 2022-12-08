@@ -41,7 +41,9 @@ input,
     outline: none;
     border: none;
 }
-
+button:focus {
+    outline: 0 !important;
+}
 a[href] {
     text-decoration: none;
     display: block;
