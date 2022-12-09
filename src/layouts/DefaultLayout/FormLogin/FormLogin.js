@@ -9,7 +9,7 @@ function FormLogin() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('header')}>Đăng nhập</div>
-            <form>
+            <form method="post">
                 <label htmlFor={cx('username')}>Tên đăng nhập:</label>
                 <input type="text" id={cx('username')} name={cx('username')} placeholder="Enter your username"></input>
                 <label htmlFor={cx('password')}>Mật khẩu:</label>
